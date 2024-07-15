@@ -1,0 +1,17 @@
+[package]
+name = "sample4j"
+version = "0.1.0"
+authors = ["Helly Guo <hellyguo@foxmail.com>"]
+edition = "2021"
+exclude = ["tests"]
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]
+samples = { path = "../samples" }
+
+[dev-dependencies]

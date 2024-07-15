@@ -1,0 +1,12 @@
+.idea
+build
+.gradle
+out
+gradle
+
+hs_err_pid*.log
+.attach_pid*
+gradlew*
+*.iml
+*.*~
+*.class
