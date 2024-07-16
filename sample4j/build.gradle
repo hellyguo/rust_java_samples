@@ -31,3 +31,9 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+jar {
+    into 'resources', {
+        from '../target/release/*.so'
+    }
+}

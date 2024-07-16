@@ -12,6 +12,5 @@ build = "build.rs"
 crate-type = ["rlib"]
 
 [dependencies]
-samples = { path = "../samples" }
 
 [dev-dependencies]
