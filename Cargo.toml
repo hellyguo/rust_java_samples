@@ -3,6 +3,7 @@ members = [
     "sample000",
     "sample001",
     "sample002",
+    "sample003",
     "sample4j"
 ]
 
