@@ -1,11 +1,12 @@
 package sample.s001;
 
 import sample.common.NativeLoader;
+import sample.common.SimpleLibInfo;
 
 public class Bytes {
 
     static {
-        NativeLoader.load(Sample001LibInfo.LIB_INFO);
+        NativeLoader.load(new SimpleLibInfo("sample001"));
     }
 
     public static native byte[] int2bytes(int data);

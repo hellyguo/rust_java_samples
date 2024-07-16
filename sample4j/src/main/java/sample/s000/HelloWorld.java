@@ -1,6 +1,7 @@
 package sample.s000;
 
 import sample.common.NativeLoader;
+import sample.common.SimpleLibInfo;
 
 public class HelloWorld {
 
@@ -11,7 +12,7 @@ public class HelloWorld {
     public static native String hello(String input);
 
     static {
-        NativeLoader.load(Sample000LibInfo.LIB_INFO);
+        NativeLoader.load(new SimpleLibInfo("sample000"));
     }
 
 }

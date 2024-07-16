@@ -1,11 +1,12 @@
 package sample.s003;
 
 import sample.common.NativeLoader;
+import sample.common.SimpleLibInfo;
 
 public final class ReverseBytes {
 
     static {
-        NativeLoader.load(Sample003LibInfo.LIB_INFO);
+        NativeLoader.load(new SimpleLibInfo("sample003"));
     }
 
     public static native byte[] reverseBytes(byte[] bytes);

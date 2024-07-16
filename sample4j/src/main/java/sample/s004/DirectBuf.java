@@ -1,13 +1,14 @@
 package sample.s004;
 
 import sample.common.NativeLoader;
+import sample.common.SimpleLibInfo;
 
 import java.nio.ByteBuffer;
 
 public final class DirectBuf {
 
     static {
-        NativeLoader.load(Sample004LibInfo.LIB_INFO);
+        NativeLoader.load(new SimpleLibInfo("sample004"));
     }
 
     public static native void bindBuf(ByteBuffer buf, int size);

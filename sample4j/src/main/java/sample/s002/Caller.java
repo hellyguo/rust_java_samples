@@ -1,11 +1,12 @@
 package sample.s002;
 
 import sample.common.NativeLoader;
+import sample.common.SimpleLibInfo;
 
 public class Caller {
 
     static {
-        NativeLoader.load(Sample002LibInfo.LIB_INFO);
+        NativeLoader.load(new SimpleLibInfo("sample002"));
     }
 
     public static native void receive(long data);
