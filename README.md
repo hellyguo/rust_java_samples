@@ -9,4 +9,4 @@ This repository contains sample `Rust` programs that call `Java` methods, and `J
 | sample002 | accept a Java object in Rust, and callback to Java |
 | sample003 | reverse Java bytes                                 |
 | sample004 | access Java DirectBuffer in Rust                   |
-| sample004 | access Java primitive array in Rust                |
+| sample005 | access Java primitive array in Rust                |
