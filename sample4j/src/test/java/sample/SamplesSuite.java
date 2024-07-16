@@ -7,6 +7,7 @@ import sample.s001.BytesTest;
 import sample.s002.CallbackTest;
 import sample.s003.ReverseBytesTest;
 import sample.s004.DirectBufTest;
+import sample.s005.PrimitiveArrayTest;
 
 import java.io.File;
 import java.nio.file.Path;
@@ -26,6 +27,7 @@ import java.util.Arrays;
         CallbackTest.class,
         ReverseBytesTest.class,
         DirectBufTest.class,
+        PrimitiveArrayTest.class,
 })
 public class SamplesSuite {
     static {
