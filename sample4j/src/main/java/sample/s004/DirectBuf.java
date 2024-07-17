@@ -11,8 +11,7 @@ public final class DirectBuf {
         NativeLoader.load(new SimpleLibInfo("sample004"));
     }
 
-    public static native void bindBuf(ByteBuffer buf, int size);
-    public static native void transferBuf();
+    public static native void transferBuf(ByteBuffer buf, int size);
 
     private DirectBuf() {
     }

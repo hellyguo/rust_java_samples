@@ -14,8 +14,7 @@ public class DirectBufTest {
     @Test
     public void test() {
         ByteBuffer buffer = ByteBuffer.allocateDirect(1024);
-        DirectBuf.bindBuf(buffer, 1024);
-        DirectBuf.transferBuf();
+        DirectBuf.transferBuf(buffer, 1024);
         buffer.position(0);
         buffer.limit(1024);
         byte[] bytes = new byte[1024];
