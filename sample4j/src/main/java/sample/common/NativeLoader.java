@@ -9,6 +9,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.Set;
+import java.util.concurrent.ConcurrentSkipListSet;
 
 /**
  * learn from <a href="https://www.cnblogs.com/FlyingPuPu/p/7598098.html">load from jar</a><br/>
@@ -30,8 +32,14 @@ public class NativeLoader {
     public static final String EXT = (OS_NAME.toLowerCase().contains("win")) ? ".dll" : ".so";
     public static final String LIB_DEF = "ENV_LIB_PARAM_NOT_EXIST";
 
+    private static final Set<String> LOADED_LIB = new ConcurrentSkipListSet<>();
+
     public static void load(LibInfo libInfo) {
         String name = libInfo.name();
+        if (LOADED_LIB.contains(name)) {
+            LOGGER.warn("the lib which named: {}, is already loaded. skip it.", name);
+            return;
+        }
         LOGGER.info("try load native library[{}] from sys lib path", name);
         try {
             System.loadLibrary(libInfo.shortName());
@@ -49,6 +57,7 @@ public class NativeLoader {
             loadFromSysProperties(name, filePath);
         }
         LOGGER.info("load native library[{}] success", name);
+        LOADED_LIB.add(name);
     }
 
     private static void loadFromJar(String jarPath, String prefix) {
