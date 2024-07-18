@@ -18,7 +18,7 @@ cargo build --release
 
 1. 在 IDE 中调用 `Java` 单元测试
 
-   > 需要设置 `JVM` 参数: `-Dsample000Lib=<path to lib>`
+   > 需要设置 `JVM` 参数: `-DsampleXYZLib=<path to lib>`
 
 2. 在 IDE 中调用 `Java` 单元测试集
 
@@ -27,3 +27,7 @@ cargo build --release
 ## 样例清单
 
 [样例清单](doc/sample_list_cn.md)
+
+## 感谢
+
+感谢 [metaworm](@metaworm)。当时我在学如何通过 `Rust` 调用 `JNI` 时，这篇文章 ([url1](https://zhuanlan.zhihu.com/p/568062165)/[url2](https://rustcc.cn/article?id=4ca84a67-d972-4460-912e-a297ec5edc0a)) 是最有效最详细的。

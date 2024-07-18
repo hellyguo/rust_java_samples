@@ -18,7 +18,7 @@ cargo build --release
 
 1. call `Java` ecah JUnit test in IDE
 
-   > need to setup `JVM` args: `-Dsample000Lib=<path to lib>`
+   > need to setup `JVM` args: `-DsampleXYZLib=<path to lib>`
 
 2. call `Java` JUnit suite in IDE
 
@@ -27,3 +27,7 @@ cargo build --release
 ## sample list
 
 [sample list](doc/sample_list.md)
+
+## thanks
+
+Thanks to [metaworm](@metaworm). This article ([url1](https://zhuanlan.zhihu.com/p/568062165)/[url2](https://rustcc.cn/article?id=4ca84a67-d972-4460-912e-a297ec5edc0a)) is the most effective and detailed when I was learning how to call `JNI` through `Rust`.
