@@ -35,6 +35,14 @@ This repository contains sample `Rust` programs that call `Java` methods, and `J
    - [primitive_array.rs](sample005/src/samples/primitive_array.rs)  
    - [PrimitiveArray.java](sample4j/src/main/java/sample/s005/PrimitiveArray.java)
 
+## build
+
+```shell
+cargo build --release
+```
+
+`cargo` will generate `.so` in `target/release`, and call `build_java.sh` to build `.jar`, which contains `.so` in `resources` folder.
+
 ## how-to
 
 1. call `Java` ecah JUnit test in IDE

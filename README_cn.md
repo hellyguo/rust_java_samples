@@ -36,6 +36,14 @@
    - [primitive_array.rs](sample005/src/samples/primitive_array.rs)  
    - [PrimitiveArray.java](sample4j/src/main/java/sample/s005/PrimitiveArray.java)
 
+## 构建
+
+```shell
+cargo build --release
+```
+
+`cargo` 在 `target/release` 构建 `.so`, 并会调用 `build_java.sh` 构建 `.jar`，里面的 `resources` 文件夹会包含 `.so`。
+
 ## 如何使用
 
 1. 在 IDE 中调用 `Java` 单元测试
