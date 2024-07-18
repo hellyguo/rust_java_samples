@@ -3,13 +3,14 @@ package sample.s006;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.OrderWith;
+import org.junit.runner.manipulation.Alphanumeric;
 
 /**
  * @author Helly Guo
  * <p>
  * Created on 7/18/24 9:12 AM
  */
-@OrderWith()
+@OrderWith(Alphanumeric.class)
 public class ObjectCreatorTest {
 
     @Test

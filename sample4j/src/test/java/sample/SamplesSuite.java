@@ -8,6 +8,7 @@ import sample.s002.CallbackTest;
 import sample.s003.ReverseBytesTest;
 import sample.s004.DirectBufTest;
 import sample.s005.PrimitiveArrayTest;
+import sample.s006.ObjectCreatorTest;
 
 import java.io.File;
 import java.nio.file.Path;
@@ -28,6 +29,7 @@ import java.util.Arrays;
         ReverseBytesTest.class,
         DirectBufTest.class,
         PrimitiveArrayTest.class,
+        ObjectCreatorTest.class,
 })
 public class SamplesSuite {
     static {
