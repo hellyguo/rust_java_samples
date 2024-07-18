@@ -1,5 +1,7 @@
 # rust-java samples
 
+[Chinese version, 中文版](README_cn.md)
+
 ## desc
 
 This repository contains sample `Rust` programs that call `Java` methods, and `Java` classes that call `Rust` methods.

@@ -1,5 +1,7 @@
 # rust-java 样例
 
+[English version, 英文版](README.md)
+
 ## 简介
 
 这个仓库包含调用 `Java` 方法的 `Rust` 代码，以及调用 `Rust` 方法的 `Java` 类。
