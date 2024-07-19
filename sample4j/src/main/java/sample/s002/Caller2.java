@@ -6,7 +6,7 @@ import sample.common.SimpleLibInfo;
 public class Caller2 {
 
     static {
-        NativeLoader.load(new SimpleLibInfo("sample002"));
+        NativeLoader.load(new SimpleLibInfo("sample"));
     }
 
     public static native void receive(long data);

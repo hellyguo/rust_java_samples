@@ -6,7 +6,7 @@ import sample.common.SimpleLibInfo;
 public class Bytes {
 
     static {
-        NativeLoader.load(new SimpleLibInfo("sample001"));
+        NativeLoader.load(new SimpleLibInfo("sample"));
     }
 
     public static native byte[] int2bytes(int data);

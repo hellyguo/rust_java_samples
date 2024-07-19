@@ -17,12 +17,9 @@ cargo build --release
 ## 如何使用
 
 1. 在 IDE 中调用 `Java` 单元测试
-
-   > 需要设置 `JVM` 参数: `-DsampleXYZLib=<path to lib>`
-
 2. 在 IDE 中调用 `Java` 单元测试集
 
-   > 需要设置 `JVM` 参数: `-Dlib_dir=<path to lib dir>`
+> **备注**：需要设置 `JVM` 参数: `-DsampleLib=<path to lib>`
 
 ## 样例清单
 

@@ -10,11 +10,6 @@ import sample.s004.DirectBufTest;
 import sample.s005.PrimitiveArrayTest;
 import sample.s006.ObjectCreatorTest;
 
-import java.io.File;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Arrays;
-
 /**
  * @author Helly Guo
  * <p>
@@ -22,7 +17,6 @@ import java.util.Arrays;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        SamplesInitTest.class,
         HelloWorldTest.class,
         BytesTest.class,
         CallbackTest.class,
@@ -32,20 +26,4 @@ import java.util.Arrays;
         ObjectCreatorTest.class,
 })
 public class SamplesSuite {
-    static {
-        String libDir = System.getProperty("lib_dir");
-        Path path = Paths.get(libDir);
-        File dir = path.toFile();
-        if (dir.isDirectory()) {
-            File[] files = dir.listFiles(n -> n.getName().endsWith(".so"));
-            if (files != null) {
-                Arrays.stream(files).forEach(f -> {
-                    String key = f.getName().substring(3, f.getName().length() - 3) + "Lib";
-                    String value = f.getAbsolutePath();
-                    System.out.println(key + "=" + value);
-                    System.setProperty(key, value);
-                });
-            }
-        }
-    }
 }

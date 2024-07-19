@@ -12,7 +12,7 @@ import sun.misc.Unsafe;
 public class PrimitiveArray {
 
     static {
-        NativeLoader.load(new SimpleLibInfo("sample005"));
+        NativeLoader.load(new SimpleLibInfo("sample"));
     }
 
 

@@ -17,12 +17,9 @@ cargo build --release
 ## how-to
 
 1. call `Java` ecah JUnit test in IDE
-
-   > need to setup `JVM` args: `-DsampleXYZLib=<path to lib>`
-
 2. call `Java` JUnit suite in IDE
 
-   > need to setup `JVM` args: `-Dlib_dir=<path to lib dir>`
+> **Note**: need to setup `JVM` args: `-DsampleLib=<path to lib>`
 
 ## sample list
 

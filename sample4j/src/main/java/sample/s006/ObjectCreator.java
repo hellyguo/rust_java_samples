@@ -11,7 +11,7 @@ import sample.common.SimpleLibInfo;
 public class ObjectCreator {
 
     static {
-        NativeLoader.load(new SimpleLibInfo("sample006"));
+        NativeLoader.load(new SimpleLibInfo("sample"));
     }
 
 

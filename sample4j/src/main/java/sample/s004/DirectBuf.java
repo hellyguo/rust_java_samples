@@ -8,7 +8,7 @@ import java.nio.ByteBuffer;
 public final class DirectBuf {
 
     static {
-        NativeLoader.load(new SimpleLibInfo("sample004"));
+        NativeLoader.load(new SimpleLibInfo("sample"));
     }
 
     public static native void transferBuf(ByteBuffer buf, int size);

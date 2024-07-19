@@ -1,12 +1,6 @@
 [workspace]
 members = [
-    "sample000",
-    "sample001",
-    "sample002",
-    "sample003",
-    "sample004",
-    "sample005",
-    "sample006",
+    "sample",
     "sample4j"
 ]
 

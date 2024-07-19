@@ -6,7 +6,7 @@ import sample.common.SimpleLibInfo;
 public final class ReverseBytes {
 
     static {
-        NativeLoader.load(new SimpleLibInfo("sample003"));
+        NativeLoader.load(new SimpleLibInfo("sample"));
     }
 
     public static native byte[] reverseBytes(byte[] bytes);
