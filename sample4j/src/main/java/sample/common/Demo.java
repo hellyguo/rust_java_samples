@@ -1,4 +1,4 @@
-package sample.s006;
+package sample.common;
 
 /**
  * @author Helly Guo

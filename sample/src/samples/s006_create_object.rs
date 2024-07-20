@@ -13,7 +13,7 @@ pub extern "system" fn Java_sample_s006_ObjectCreator_create<'local>(
     _class: JClass<'local>,
 ) -> JObject<'local> {
     let obj = env
-        .new_object("sample/s006/Demo", "()V", &[])
+        .new_object("sample/common/Demo", "()V", &[])
         .expect("Failed to create object");
     obj
 }
@@ -30,13 +30,13 @@ pub extern "system" fn Java_sample_s006_ObjectCreator_createFast<'local>(
         Ok(mut guard) => {
             if guard.is_none() {
                 let constructor_method_id = env
-                    .get_method_id("sample/s006/Demo", "<init>", "()V")
+                    .get_method_id("sample/common/Demo", "<init>", "()V")
                     .expect("Failed to get method id");
                 *guard = Some(constructor_method_id);
             }
             let constructor_method_id = guard.as_ref().unwrap();
             let obj = unsafe {
-                env.new_object_unchecked("sample/s006/Demo", *constructor_method_id, &[])
+                env.new_object_unchecked("sample/common/Demo", *constructor_method_id, &[])
                     .expect("Failed to create object")
             };
             obj

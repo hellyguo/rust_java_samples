@@ -36,3 +36,8 @@
 
    - [s006_create_object.rs](../sample/src/samples/s006_create_object.rs)  
    - [ObjectCreator.java](../sample4j/src/main/java/sample/s006/ObjectCreator.java)
+
+7. **sample007**, set a field to `Java` object in `Rust`
+
+   - [s007_fill_field.rs](../sample/src/samples/s007_fill_field.rs)  
+   - [FieldFiller.java](../sample4j/src/main/java/sample/s007/FieldFiller.java)

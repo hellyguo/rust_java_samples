@@ -1,9 +1,8 @@
-use std::ptr;
-use std::sync::Mutex;
-
 use jni::objects::{JByteArray, JClass};
 use jni::sys::jint;
 use jni::JNIEnv;
+use std::ptr;
+use std::sync::Mutex;
 
 static MTX_OPT_BYTES_OFFSET: Mutex<Option<isize>> = Mutex::new(None);
 
@@ -39,7 +38,7 @@ pub extern "system" fn Java_sample_s005_PrimitiveArray_copyElement<'local>(
     match MTX_OPT_BYTES_OFFSET.lock() {
         Ok(guard) => {
             let len = length as usize;
-            let posi= position as usize;
+            let posi = position as usize;
             let offset = guard.unwrap();
             let src = conv(src, len, offset);
             let dst = conv_mut(dst, len, offset);

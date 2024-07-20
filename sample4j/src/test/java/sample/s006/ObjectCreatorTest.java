@@ -5,6 +5,8 @@ import org.junit.Test;
 import org.junit.runner.OrderWith;
 import org.junit.runner.manipulation.Alphanumeric;
 
+import static sample.SimplesConst.LOOP_TIMES;
+
 /**
  * @author Helly Guo
  * <p>
@@ -22,7 +24,7 @@ public class ObjectCreatorTest {
     @Test
     public void test1Multi() {
         Object object;
-        for (int i = 0; i < 10_000_000; i++) {
+        for (int i = 0; i < LOOP_TIMES; i++) {
             object = ObjectCreator.create();
             Assert.assertNotNull(object);
         }
@@ -37,7 +39,7 @@ public class ObjectCreatorTest {
     @Test
     public void test3MultiFast() {
         Object object;
-        for (int i = 0; i < 10_000_000; i++) {
+        for (int i = 0; i < LOOP_TIMES; i++) {
             object = ObjectCreator.createFast();
             Assert.assertNotNull(object);
         }
