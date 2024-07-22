@@ -10,8 +10,8 @@ pub extern "system" fn Java_sample_s007_FieldFiller_fill<'local>(
     _class: JClass<'local>,
     obj: JObject<'local>,
 ) {
-    let demo = env.new_object("sample/common/Demo", "()V", &[]).unwrap();
-    if let Err(e) = env.set_field(obj, "demo", "Lsample/common/Demo;", JValueGen::Object(&demo)) {
+    let demo = env.new_object("sample/data/Demo", "()V", &[]).unwrap();
+    if let Err(e) = env.set_field(obj, "demo", "Lsample/data/Demo;", JValueGen::Object(&demo)) {
         panic!("failed to set field: demo, {}", e);
     }
 }

@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.OrderWith;
 import org.junit.runner.manipulation.Alphanumeric;
-import sample.common.Sample;
+import sample.data.Sample;
 
 import static sample.SimplesConst.LOOP_TIMES;
 
