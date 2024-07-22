@@ -78,8 +78,9 @@ public class NativeLoader {
     }
 
     private static void loadFromSysProperties(String name, String filePath) {
+        Path path = Paths.get(filePath);
         try {
-            System.load(filePath);
+            System.load(path.toFile().getAbsolutePath());
         } catch (UnsatisfiedLinkError e) {
             LOGGER.info("failed to load native library[{}] from {}: {}", name, filePath, e.getMessage());
             throw new RuntimeException(e);

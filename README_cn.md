@@ -21,6 +21,22 @@ cargo build --release
 
 > **备注**：需要设置 `JVM` 参数: `-DsampleLib=<path to lib>`
 
+或者
+
+1. 在命令行中执行 `Java` 单元测试
+
+    ```shell
+    gradle test --tests HelloWorldTest
+    ```
+
+2. 在命令行中执行 `Java` 单元测试集
+
+    ```shell
+    gradle test --tests SamplesSuite
+    ```
+
+可在 [JUnit 报告](sample4j/build/reports/tests/test/index.html) 中观察结果
+
 ## 样例清单
 
 [样例清单](doc/sample_list_cn.md)

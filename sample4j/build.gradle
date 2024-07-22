@@ -26,10 +26,16 @@ dependencies {
     testImplementation 'org.powermock:powermock-reflect:2.0.4'
     testImplementation 'org.openjdk.jmh:jmh-core:1.21'
     testImplementation 'org.openjdk.jmh:jmh-generator-annprocess:1.21'
+    // see in https://docs.gradle.org/current/userguide/java_testing.html#executing_legacy_tests_with_junit_vintage
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter:5.7.1'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.7.1'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.7.1'
 }
 
 test {
     useJUnitPlatform()
+    jvmArgs '-DsampleLib=../target/release/libsample.so'
+    exclude '**/**Suite'
 }
 
 jar {

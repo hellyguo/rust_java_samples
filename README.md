@@ -16,10 +16,26 @@ cargo build --release
 
 ## how-to
 
-1. call `Java` ecah JUnit test in IDE
-2. call `Java` JUnit suite in IDE
+1. call `Java` each JUnit test in IDE
+2. call `Java` JUnit test suite in IDE
 
 > **Note**: need to setup `JVM` args: `-DsampleLib=<path to lib>`
+
+or
+
+1. execute `Java` each JUnit test in console
+
+    ```shell
+    gradle test --tests HelloWorldTest
+    ```
+
+2. execute `Java` each JUnit test suite in console
+
+    ```shell
+    gradle test --tests SamplesSuite
+    ```
+
+The [JUnit report](sample4j/build/reports/tests/test/index.html) will be generated.
 
 ## sample list
 
