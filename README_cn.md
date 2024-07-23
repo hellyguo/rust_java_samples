@@ -6,6 +6,10 @@
 
 这个仓库包含调用 `Java` 方法的 `Rust` 代码，以及调用 `Rust` 方法的 `Java` 类。
 
+## 样例清单
+
+[样例清单](doc/sample_list_cn.md)
+
 ## 构建
 
 ```shell
@@ -36,10 +40,6 @@ cargo build --release
     ```
 
 可在 [JUnit 报告](sample4j/build/reports/tests/test/index.html) 中观察结果
-
-## 样例清单
-
-[样例清单](doc/sample_list_cn.md)
 
 ## 感谢
 

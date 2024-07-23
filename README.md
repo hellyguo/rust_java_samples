@@ -6,6 +6,10 @@
 
 This repository contains sample `Rust` programs that call `Java` methods, and `Java` classes that call `Rust` methods.
 
+## sample list
+
+[sample list](doc/sample_list.md)
+
 ## build
 
 ```shell
@@ -36,10 +40,6 @@ or
     ```
 
 The [JUnit report](sample4j/build/reports/tests/test/index.html) will be generated.
-
-## sample list
-
-[sample list](doc/sample_list.md)
 
 ## thanks
 
