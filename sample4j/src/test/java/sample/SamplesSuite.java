@@ -10,6 +10,8 @@ import sample.s004.DirectBufTest;
 import sample.s005.PrimitiveArrayTest;
 import sample.s006.ObjectCreatorTest;
 import sample.s007.FieldFillerTest;
+import sample.s008.MemClassLoaderTest;
+import sample.s009.NativeMethodRegisterTest;
 
 /**
  * @author Helly Guo
@@ -26,6 +28,8 @@ import sample.s007.FieldFillerTest;
         PrimitiveArrayTest.class,
         ObjectCreatorTest.class,
         FieldFillerTest.class,
+        MemClassLoaderTest.class,
+        NativeMethodRegisterTest.class,
 })
 public class SamplesSuite {
 }

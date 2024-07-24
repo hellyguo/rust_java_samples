@@ -9,3 +9,4 @@ pub mod s006_create_object;
 pub mod s007_fill_field;
 pub mod s008_class_buf;
 pub mod s008_load_class;
+pub mod s009_reg_method;

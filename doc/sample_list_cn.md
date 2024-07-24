@@ -51,3 +51,8 @@
    - [MemClassLoader.java](../sample4j/src/main/java/sample/s008/MemClassLoader.java)
 
    > `s008_class_buf.rs` 是通过 [java2u8vec.sh](../shell/java2u8vec.sh) 生成的
+
+9. **sample009**, 在 `Rust` 中动态注册 `Java` 方法
+
+   - [s009_reg_method.rs](../sample/src/samples/s009_reg_method.rs)
+   - [NativeMethodRegister.java](../sample4j/src/main/java/sample/s009/NativeMethodRegister.java)
