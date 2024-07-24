@@ -1,5 +1,7 @@
 # rust-java samples
 
+[Chinese version, 中文版](sample_list_cn.md)
+
 0. **sample000**, call `Rust` method from `Java`
 
    - [s000_hello.rs](../sample/src/samples/s000_hello.rs)
