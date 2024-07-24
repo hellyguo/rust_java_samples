@@ -59,5 +59,5 @@
 
 10. **sample010**, 通过 `Java` 控制 `Rust` 线程
 
-   - [s010_thread_ctl.rs](../sample/src/samples/s010_thread_ctl.rs)
-   - [RunInRustThread.java](../sample4j/src/main/java/sample/s010/RunInRustThread.java)
+    - [s010_thread_ctl.rs](../sample/src/samples/s010_thread_ctl.rs)
+    - [RunInRustThread.java](../sample4j/src/main/java/sample/s010/RunInRustThread.java)
