@@ -24,20 +24,28 @@
 
 4. **sample004**, 在 `Rust` 中访问 `Java` 非堆内存
 
-   - [s004_direct_buf.rs](../sample/src/samples/s004_direct_buf.rs)      
+   - [s004_direct_buf.rs](../sample/src/samples/s004_direct_buf.rs)
    - [DirectBuf.java](../sample4j/src/main/java/sample/s004/DirectBuf.java)
 
 5. **sample005**, 在 `Rust` 中访问 `Java` 基本类型数组
 
-   - [s005_primitive_array.rs](../sample/src/samples/s005_primitive_array.rs)  
+   - [s005_primitive_array.rs](../sample/src/samples/s005_primitive_array.rs)
    - [PrimitiveArray.java](../sample4j/src/main/java/sample/s005/PrimitiveArray.java)
 
 6. **sample006**, 在 `Rust` 中创建 `Java` 对象
 
-   - [s006_create_object.rs](../sample/src/samples/s006_create_object.rs)  
+   - [s006_create_object.rs](../sample/src/samples/s006_create_object.rs)
    - [ObjectCreator.java](../sample4j/src/main/java/sample/s006/ObjectCreator.java)
 
 7. **sample007**, 在 `Rust` 中为 `Java` 对象设置字段值
 
-   - [s007_fill_field.rs](../sample/src/samples/s007_fill_field.rs)  
+   - [s007_fill_field.rs](../sample/src/samples/s007_fill_field.rs)
    - [FieldFiller.java](../sample4j/src/main/java/sample/s007/FieldFiller.java)
+
+8. **sample008**, 在 `Rust` 中加载 `Java` 类
+
+   - [s008_load_class.rs](../sample/src/samples/s008_load_class.rs)
+   - [s008_class_buf.rs](../sample/src/samples/s008_class_buf.rs)
+   - [MemClassLoader.java](../sample4j/src/main/java/sample/s008/MemClassLoader.java)
+
+   > `s008_class_buf.rs` 是通过 [java2u8vec.sh](../shell/java2u8vec.sh) 生成的
