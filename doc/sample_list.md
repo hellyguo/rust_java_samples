@@ -56,3 +56,8 @@
 
    - [s009_reg_method.rs](../sample/src/samples/s009_reg_method.rs)
    - [NativeMethodRegister.java](../sample4j/src/main/java/sample/s009/NativeMethodRegister.java)
+
+10. **sample010**, control `Rust` thread in `Java`
+
+   - [s010_thread_ctl.rs](../sample/src/samples/s010_thread_ctl.rs)
+   - [RunInRustThread.java](../sample4j/src/main/java/sample/s010/RunInRustThread.java)

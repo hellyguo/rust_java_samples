@@ -10,3 +10,4 @@ pub mod s007_fill_field;
 pub mod s008_class_buf;
 pub mod s008_load_class;
 pub mod s009_reg_method;
+pub mod s010_thread_ctl;
