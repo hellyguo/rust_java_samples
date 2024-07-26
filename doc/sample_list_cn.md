@@ -61,3 +61,8 @@
 
     - [s010_thread_ctl.rs](../sample/src/samples/s010_thread_ctl.rs)
     - [RunInRustThread.java](../sample4j/src/main/java/sample/s010/RunInRustThread.java)
+
+11. **sample011**, 通过 `Java` 控制 `Rust` 线程
+
+    - [s011_thread_ctl.rs](../sample/src/samples/s011_thread_ctl2.rs)
+    - [RunInRustThread.java](../sample4j/src/main/java/sample/s011/RunInRustThread2.java)

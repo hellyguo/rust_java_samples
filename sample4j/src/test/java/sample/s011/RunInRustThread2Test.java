@@ -1,4 +1,4 @@
-package sample.s010;
+package sample.s011;
 
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -10,16 +10,16 @@ import sample.common.TestHelper;
  * <p>
  * Created on 7/24/24 8:38 PM
  */
-public class RunInRustThreadTest {
+public class RunInRustThread2Test {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(RunInRustThreadTest.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(RunInRustThread2Test.class);
 
     @Test
     public void test() {
-        RunInRustThread.callAsync("a msg from Java");
+        RunInRustThread2.callAsync("a msg from Java");
         TestHelper.trySleep(2000);
         while (true) {
-            boolean success = RunInRustThread.stopExecute();
+            boolean success = RunInRustThread2.stopExecute();
             if (success) {
                 LOGGER.info("success to set active to false");
                 break;

@@ -13,6 +13,7 @@ import sample.s007.FieldFillerTest;
 import sample.s008.MemClassLoaderTest;
 import sample.s009.NativeMethodRegisterTest;
 import sample.s010.RunInRustThreadTest;
+import sample.s011.RunInRustThread2Test;
 
 /**
  * @author Helly Guo
@@ -32,6 +33,7 @@ import sample.s010.RunInRustThreadTest;
         MemClassLoaderTest.class,
         NativeMethodRegisterTest.class,
         RunInRustThreadTest.class,
+        RunInRustThread2Test.class,
 })
 public class SamplesSuite {
 }
