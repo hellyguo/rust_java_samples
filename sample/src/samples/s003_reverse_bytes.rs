@@ -29,10 +29,10 @@ fn conv2bytes(env: JNIEnv, data: &AutoElements<i8>, len: usize) -> jbyteArray {
     for i in 0..len {
         u8vec.push(data[len - i - 1] as u8);
     }
-    return env
+    env
         .byte_array_from_slice(u8vec.as_slice())
         .unwrap()
-        .into_raw();
+        .into_raw()
 }
 
 #[no_mangle]

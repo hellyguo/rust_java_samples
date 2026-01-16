@@ -14,7 +14,7 @@ pub extern "system" fn Java_sample_s001_Bytes_int2bytes<'local>(
     input: jint,
 ) -> jbyteArray {
     let data = input.to_be_bytes();
-    return conv2bytes(env, data.as_slice(), data.len());
+    conv2bytes(env, data.as_slice(), data.len())
 }
 
 #[no_mangle]
@@ -27,7 +27,7 @@ pub extern "system" fn Java_sample_s001_Bytes_long2bytes<'local>(
     input: jlong,
 ) -> jbyteArray {
     let data = input.to_be_bytes();
-    return conv2bytes(env, data.as_slice(), data.len());
+    conv2bytes(env, data.as_slice(), data.len())
 }
 
 #[no_mangle]
@@ -40,7 +40,7 @@ pub extern "system" fn Java_sample_s001_Bytes_float2bytes<'local>(
     input: jfloat,
 ) -> jbyteArray {
     let data = input.to_be_bytes();
-    return conv2bytes(env, data.as_slice(), data.len());
+    conv2bytes(env, data.as_slice(), data.len())
 }
 
 #[no_mangle]
@@ -53,9 +53,9 @@ pub extern "system" fn Java_sample_s001_Bytes_double2bytes<'local>(
     input: jdouble,
 ) -> jbyteArray {
     let data = input.to_be_bytes();
-    return conv2bytes(env, data.as_slice(), data.len());
+    conv2bytes(env, data.as_slice(), data.len())
 }
 
 fn conv2bytes(env: JNIEnv, data: &[u8], _len: usize) -> jbyteArray {
-    return env.byte_array_from_slice(data).unwrap().into_raw();
+    env.byte_array_from_slice(data).unwrap().into_raw()
 }

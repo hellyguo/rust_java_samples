@@ -30,7 +30,7 @@ pub extern "system" fn Java_sample_s011_RunInRustThread2_callAsync<'local>(
                     let _ = unsafe {
                         env.call_static_method_unchecked(
                             &class,
-                            &method_id,
+                            method_id,
                             ReturnType::Primitive(Primitive::Void),
                             &[],
                         )
